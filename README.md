@@ -31,7 +31,7 @@ Note: wget hangs in about 10% of cases due to the last character ">" missing fro
 ### AWB source code 
 
 The project of updating Wikipedia is essentially complete so these scripts are no longer needed. They provide a basis for similar projects 
-ie. automatically replacing certain text within a <ref></ref> pair with new text, and/or replacing an external links 
+ie. automatically replacing certain text between ref and /ref pairs, and/or replacing external links 
 with a new external link. This is a common task, in particular as websites go offline and need Wayback replacements 
 and/or changing bare URLs to templates (such as migrating all the findagrave.org URLs to the {{findagrave}} template).
 
