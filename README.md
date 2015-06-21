@@ -14,12 +14,15 @@ More information can be found at: https://en.wikipedia.org/wiki/User:Green_Carda
 
 1. Download index page:
 
-	wget -q -O- "https://web.archive.org/web/20130704043115/http://www.kirjasto.sci.fi/indeksi.htm" > indeksi.htm
+```
+wget -q -O- "https://web.archive.org/web/20130704043115/http://www.kirjasto.sci.fi/indeksi.htm" > indeksi.htm
+```
 
 2. Download author pages:
 
-	grep '<li><a href="/web/20130704043115/http://www.kirjasto.sci.fi' indexsi.htm | grep -oE "sci.fi/[^.]*[^.]" | \
-	awk '{split($0,a,"/"); printf("wget --retry-connrefused --waitretry=1 --read-timeout=2 --timeout=5 --tries=1 --no-dns-cache -q -O- -q -O- \"https://web.archive.org/web/20150210175324/http://www.kirjasto.sci.fi/%s.htm\" > %s.htm\n",a[2],a[2])}'
+```
+grep '<li><a href="/web/20130704043115/http://www.kirjasto.sci.fi' indexsi.htm | grep -oE "sci.fi/[^.]*[^.]" | awk '{split($0,a,"/"); printf("wget --retry-connrefused --waitretry=1 --read-timeout=2 --timeout=5 --tries=1 --no-dns-cache -q -O- -q -O- \"https://web.archive.org/web/20150210175324/http://www.kirjasto.sci.fi/%s.htm\" > %s.htm\n",a[2],a[2])}'
+```
 
 == AWB source code ==
 
