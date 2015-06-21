@@ -1,6 +1,6 @@
 Project to archive the Books and Writers website (kirjasto.sci.fi)
 
-== Overview ==
+## Overview 
 
 This repository contains two distinct elements:
 
@@ -8,9 +8,9 @@ This repository contains two distinct elements:
 	
 	2. Source code to update Wikipedia using AutoWikiBrowser (AWB)
 
-More information can be found at: https://en.wikipedia.org/wiki/User:Green_Cardamom/kirjasto.sci.fi
+The project website is [here](https://en.wikipedia.org/wiki/User:Green_Cardamom/kirjasto.sci.fi).
 
-== Steps for archiving == 
+## Steps for archiving 
 
 1. Download index page:
 
@@ -24,7 +24,7 @@ wget -q -O- "https://web.archive.org/web/20130704043115/http://www.kirjasto.sci.
 grep '<li><a href="/web/20130704043115/http://www.kirjasto.sci.fi' indexsi.htm | grep -oE "sci.fi/[^.]*[^.]" | awk '{split($0,a,"/"); printf("wget --retry-connrefused --waitretry=1 --read-timeout=2 --timeout=5 --tries=1 --no-dns-cache -q -O- -q -O- \"https://web.archive.org/web/20150210175324/http://www.kirjasto.sci.fi/%s.htm\" > %s.htm\n",a[2],a[2])}'
 ```
 
-== AWB source code ==
+## AWB source code 
 
 This project is essentially completed so these scripts are no longer needed. They provide a basis for similar projects 
 ie. automatically replacing certain text within a <ref></ref> pair with new text, and/or replacing an external links 
@@ -45,11 +45,11 @@ To run the script with AutoWikiBrowser (AWB):
 		Input/Output file: c:\cygwin\home\username\scriptname\temp\article.txt
 
 
-== Books and Writers template ==
+## Books and Writers template 
 
 A template written in Lua for linking to Books and Writers is at Template:Books_and_Writers on the English Wikipedia.
 
-== Credits ==
+## Credits 
 
 The Books and Writers website is Copyright Petri Liukkonen under the Creative Commons Finnish license BY-ND-NC (http://creativecommons.org/licenses/by-nd-nc/1.0/fi/deed.en)
 
