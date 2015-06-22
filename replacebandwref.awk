@@ -39,7 +39,8 @@ BEGIN {
    c = patsplit(Article, b, "{[ ]{0,2}[Cc]ite[^}]+}")
    while (i++ < c) {
      if(b[i] ~ "kirjasto[.]sci[.]fi") {
-       replace(b[i], sprintf("{Books and Writers |id=%s |name=%s |cite=yes}", bandwid(b[i]), name) )
+       id = bandwid(b[i])
+       replace(tl, sprintf("{{cite web |url=http://www.kirjasto.sci.fi/%s.htm |title=%s |website=Books and Writers ''(kirjasto.sci.fi)'' |first=Petri |last=Liukkonen |publisher=[[Kuusankoski]] Public Library |location=Finland |archiveurl=https://web.archive.org/web/20150210175324/http://www.kirjasto.sci.fi/%s.htm |archivedate=10 February 2015 |dead-url=yes}}",id,name,id) )
      }
    }
 
@@ -50,7 +51,8 @@ BEGIN {
    while(i++ < c) {
      k = substr(b[i], 1, match(b[i], "</ref>") - 1)
      if(k ~ "kirjasto[.]sci[.]fi") {
-       replace(k, sprintf("{{Books and Writers |id=%s |name=%s |cite=yes}}", bandwid(k), name) )
+       id = bandwid(k)
+       replace(tl, sprintf("{{cite web |url=http://www.kirjasto.sci.fi/%s.htm |title=%s |website=Books and Writers ''(kirjasto.sci.fi)'' |first=Petri |last=Liukkonen |publisher=[[Kuusankoski]] Public Library |location=Finland |archiveurl=https://web.archive.org/web/20150210175324/http://www.kirjasto.sci.fi/%s.htm |archivedate=10 February 2015 |dead-url=yes}}",id,name,id) )
      }
    }
 
