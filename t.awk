@@ -7,16 +7,18 @@ BEGIN{
 
   fp = readfile(sourcefile)
 
-  gsub(/indeksi[.]htm[#]/, "index.htm#", fp)
+  gsub(/index[.]htm[#]/, "index.html#", fp)
 
-  newstr = "<!--Vara4--></p><p>" insert_text "</p>"
+  #newstr = "<!--Vara4--></p><p>" insert_text "</p>"
 
-  nfp = gensub(/<[ ]{0,}![ ]{,0}--[ ]{0,}[Vv][Aa][Rr][Aa]4[ ]{0,}--[ ]{0,}>[ \n\t]{0,}<[ ]{0,}\/[ ]{0,}[Pp][ ]{0,}>/, newstr, 1, fp)
+  #nfp = gensub(/<[ ]{0,}![ ]{,0}--[ ]{0,}[Vv][Aa][Rr][Aa]4[ ]{0,}--[ ]{0,}>[ \n\t]{0,}<[ ]{0,}\/[ ]{0,}[Pp][ ]{0,}>/, newstr, 1, fp)
 
-  if(fp == nfp)
-    print "Unable to process " sourcefile > "/dev/stderr"
-  else
-    print nfp > sourcefile
+  #if(fp == nfp)
+  #  print "Unable to process " sourcefile > "/dev/stderr"
+  #else
+  #  print nfp > sourcefile
+
+  print fp > sourcefile
 
 }
 
