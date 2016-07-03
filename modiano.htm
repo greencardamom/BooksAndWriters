@@ -1,0 +1,507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app19.us.archive.org";archive_analytics.values.server_ms=278;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+<title>Patrick Modiano</title></head><body style="color: black; background-color: white; background-image: url(/web/20141130203442im_/http://www.kirjasto.sci.fi/pix/tauskuva.jpg);">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.kirjasto.sci.fi/modiano.htm";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "30";
+var displayMonth = "Nov";
+var displayYear = "2014";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.kirjasto.sci.fi/modiano.htm" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20141130203442" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Oct
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 20:34:42 Nov 30, 2014">NOV</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Dec
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 20:34:42 Nov 30, 2014">30</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2013
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 20:34:42 Nov 30, 2014">2014</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2015
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20141130203442*/http://www.kirjasto.sci.fi/modiano.htm" title="See a list of every capture for this URL">1 captures</a>
+           <div class="r" title="Timespan for captures of this URL">30 Nov 14 - 30 Nov 14</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:10:000000000010_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<!--taulukko alkaa-->
+<center>
+<table align="center" border="0" cellpadding="5" cellspacing="0" width="80%">
+<tbody>
+<tr>
+<td rowspan="2" align="left" bgcolor="white" valign="top" width="19%"><!--Vasen palsta, linkit ym--><a href="calendar.htm"><img src="/web/20141130203442im_/http://www.kirjasto.sci.fi/pix/bwlogo.jpg" border="2" height="100" width="100"></a><br clear="all">
+<br>
+<font face="Arial" size="-1"><!--********************--><a href="/web/20141130203442/http://www.amazon.com/exec/obidos/redirect-home/authorscalend-20"><img src="/web/20141130203442im_/http://www.kirjasto.sci.fi/pix/ylamainos.gif" alt="In Association with Amazon.com" border="0" height="70" hspace="0" vspace="0" width="100"></a><br>
+<br>
+<!--********************--> <font size="-1"><b>Choose another writer
+in this calendar:</b></font>
+<p>by name:<br>
+<a href="indeksi.htm#a" target="_blank">A</a> <a href="indeksi.htm#b" target="_blank">B</a> <a href="indeksi.htm#c" target="_blank">C</a> <a href="indeksi.htm#d" target="_blank">D</a> <a href="indeksi.htm#e" target="_blank">E</a> <a href="indeksi.htm#f" target="_blank">F</a> <a href="indeksi.htm#g" target="_blank">G</a> <a href="indeksi.htm#h" target="_blank">H</a> <a href="indeksi.htm#i" target="_blank">I</a> <a href="indeksi.htm#j" target="_blank">J</a> <a href="indeksi.htm#k" target="_blank">K</a> <a href="indeksi.htm#l" target="_blank">L</a> <a href="indeksi.htm#m" target="_blank">M</a> <a href="indeksi.htm#n" target="_blank">N</a> <a href="indeksi.htm#o" target="_blank">O</a> <a href="indeksi.htm#p" target="_blank">P</a> <a href="indeksi.htm#q" target="_blank">Q</a> <a href="indeksi.htm#r" target="_blank">R</a> <a href="indeksi.htm#s" target="_blank">S</a> <a href="indeksi.htm#t" target="_blank">T</a> <a href="indeksi.htm#u" target="_blank">U</a> <a href="indeksi.htm#v" target="_blank">V</a> <a href="indeksi.htm#w" target="_blank">W</a> <a href="indeksi.htm#x" target="_blank">X</a> <a href="indeksi.htm#y" target="_blank">Y</a> <a href="indeksi.htm#z" target="_blank">Z</a> </p>
+<p>by birthday from the <a href="calendar.htm" target="_top">calendar</a>.
+</p>
+<p> <a href="/web/20141130203442/http://www.kirjasto.sci.fi/pix/credits.htm" target="_blank">Credits and
+feedback</a> </p>
+<p><!--Bamber Gascoigne--><a href="/web/20141130203442/http://www.timesearch.info/bookswriters/" target="_blank"><b>TimeSearch</b></a><br>
+for Books and Writers<br>
+by <i>Bamber Gascoigne</i><br>
+<!--Vara2-->
+<!--Vara3--><!--Vara4--></p>
+</font> </td>
+<td rowspan="2" align="left" background="/web/20141130203442im_/http://www.kirjasto.sci.fi/pix/viiva.jpg" bgcolor="white" valign="top" width="2"><!--T&#8222;m&#8222; on koristeviivasarake-->
+<br>
+</td>
+<td align="left" bgcolor="black" width="80%"><!--T&#8222;ss&#8222; on mustapohjainen otsikkosolu--><font color="white" face="Arial" size="+1"><b>Patrick Modiano (b. 1945)</b></font>
+</td>
+</tr>
+<tr>
+<td align="left" bgcolor="white" width="80%"><!--T&#8222;h&#8222;n tulee varsinainen teksti-->
+<p>&nbsp;</p>
+<p><!-- Thank you for examining the code --></p>
+<p><!-- Teksti alkaa tästä -->French
+novelist, who was awarded the Nobel Prize for literature in 2014 "for
+the art of memory with which he has evoked the most ungraspable human
+destinies ..." In
+his work, Patrick Modiano has mixed historical reality and fiction. A
+recurring subject in his early books is the period of the Nazi
+Occupation. <br>
+</p>
+<blockquote><font size="2"><b>"</b><span style="font-weight: bold;">I
+am nothing. Nothing but a pale shape, silhouetted that evening against
+the café terrace, waiting for the rain to stop; the shower had started
+when Hutte left me</span>.<b>"</b> <font size="-1">(from </font></font><font size="-1"><span style="font-style: italic;">Missing Person</span>,
+1978) </font></blockquote>
+<p>Patrick
+Modiano was born in Boulogne-Billancourt, a suburb of Paris. His
+father, Albert Modiano, was a businessman. During the dark years of the
+German occupation of&nbsp; France, he
+was forced into black-market and possibly Gestapo-linked activities in
+order to survive as a Jew. He never spoke of his
+wartime activities. Modiano's Belgian-born mother Luisa Colpeyn
+Modiano (b. 1918) worked as a chorus girl, cinema translator and
+actress: she had roles in
+many TV series and acted in such films as <span style="font-style: italic;">Le cercle vicieux</span> (1960, Vicious
+Circle) by Max Pécas, <span style="font-style: italic;">Bande à part</span>
+(1964, Band of Outsiders) by Jean-Luc Godard, and <span style="font-style: italic;">La mort en sautoir</span> (1980) by Pierre
+Goutas. <br>
+</p>
+<p>Modiano learned Flemish, his first language, from his
+grandparents, who brought him up. After unhappy years at a boarding
+school, he attended the prestigious Lycée Henri-IV in Paris, where his
+geometry teacher was the writer Raymond Queneau, a friend of his
+mother. Queneau encouraged Modiano in his literary pursuits and
+introduced him to artistic circles. Modiano started writing seriously
+in 1967. His first novel, <span style="font-style: italic;">La Place
+de l'Étoile</span>,
+was published by Gallimard. It came out after the French student riots
+in May 1968, but had nothing to do
+with the current political crisis. The story consisted of fractured,
+hallucinatory memoirs of Raphaël&nbsp;
+Schlemilovitch, a Jew, struggling to gain a sense of himself. <span style="font-style: italic;"></span><br>
+</p>
+<p>In a interview Modiano has said that the death of his
+brother Rudy in 1957
+was the most traumatic event of his childhood and the most identifiable
+reason why he became a writer. From 1968 to 1982, he dedicated his
+books to Rudy. Modiano's father largely abandoned his
+family and died in the late 1970s. The "missing father" and
+a search for personal identity and have been central to Modiano's work.
+He also was neglected by his mother, who did not show much maternal
+affection toward her son. In <span style="font-style: italic;">De si
+braves garçons</span> (1982) and <span style="font-style: italic;">La
+Petite Bijou</span> (2001) Modiano portrayed negligent mothers. He once
+said, that he has felt as if he
+were writing the same book over and over again. Most likely, his father
+read <span style="font-style: italic;">La Place
+de l'Étoile. </span>In the same year, when it was published, he
+disappeared. Nothing was heard of him until 1978. &nbsp; </p>
+<p>Many of Modiano's novels play with autobiographical truth and
+fictionalization of self. <span style="font-style: italic;">Les
+boulevards de ceinture</span>
+(1972, Ring Roads), which won the French Academy's Grand Prix du Roman,
+told about a young Jewish boy, who searches for his missing father and
+discovers the criminal underworld in wartime Paris. The beginning of
+the novel leans on the <span style="font-style: italic;">nouveau</span>
+roman and <a href="grillet.htm">Alain Robbe-Grillet</a> (1922-2008) by
+focusing on the description of physical objects. <br>
+</p>
+<p><span style="font-style: italic;">Villa triste</span> (1975)
+explored the difficulties of remembering.
+The unnamed narrator tries to recreate some fifteen years later a
+summer in a resort town near Lake Geneva, where he has escaped from the
+Algerian bombings in Paris. In 1976 Modiano published a
+book-length interview with Emmanuel Berl<span style="font-style: italic;">, </span>a journalist, historian and
+essayist, and neighbor, in the Palais Royal, of Jean Cocteau and
+Colette. <span style="font-style: italic;">Livret de famille</span>
+(1977)
+echoed the experiences of the writer's own life without being
+autobiographical. The narrator is anonymous. "One cannot presume to
+say," wrote Francis Steegmuller in his review, "that Patrick Modiano
+has deliberately set out to make himself, in his books, a man of
+mystery . . ." <br>
+</p>
+<p>With the film director Louis Malle Modiano wrote the
+screenplay
+for <span style="font-style: italic;">Lacombe Lucien </span>(1974),
+about a young Frenchman, who joins the Gestapo and becomes the victiom
+of his own detachment and indiffence. This controversial film, which
+deconstructed the myths of the Occupation by portraying Lucien in a
+fundamentally sympathetic light, was accused of reactionary politics
+and aestetics.<br>
+</p>
+<p>Modiano established his literary reputation with his early
+novels. Published when the golden age of <span style="font-style: italic;">roman nouveau</span>
+was over, they were seen as a sign of the future. Some critics have
+contrasted Modiano with another famous French writer of his generation,
+<a href="leclezio.htm">J.M.G. Le Clézio</a>
+(b. 1940). They both have been awarded the Nobel Prize for literature,
+but while Le Clézio has been counted among the avant-garde writers due
+to his early experimentalist approach to novel, Modiano is thought to
+be more tradition-oriented due to his popularity.<br>
+</p>
+<p>Modiano's outstanding career as a
+writer has spanned over four decades. Ever since his breakthrough
+on the French literary scene Modiano has enjoyed success among both the
+public and the critics. Among his most discussed books in the 1990s was
+<span style="font-style: italic;">Dora Bruder</span> (1997). More
+of a biography than a novel, it told about a Jewish girl, who was
+deported in 1942 from Paris to Auschwitz. </p>
+<p>Although Modiano's work resist simple categorization, his name
+is generally associated with postmodernism. In
+spite of winning the major French literary prizes, honors,
+translations, and studies, Modiano has remained largely aloof from the
+public arena. However, he has appeared in 1982 on Bernard Pivot's talk show <span style="font-style: italic;">Apostrophes</span>, made a cameo role in
+Raoul Ruiz's film <span style="font-style: italic;">Généalogie d'un
+crime</span> (1997) as Catherine Deneuve's<span style="font-style: italic;"> </span><em></em>ex-husband Bob, and participated as a member of the jury at Cannes
+film festival in 2000. <a href="sarraute.htm">Nathalie Sarraute</a>
+(1900-1999), who pioneered the <span class="st"><span style="font-style: italic;">New Novel</span> movement, </span>
+said in 1997 at the age of ninety-seven, that Modiano was one of the
+young writers whom she most admired. Modiano married in 1970 Dominique
+Zehrfuss, writer and illustrator; they had two
+daughters. </p>
+<blockquote> <font size="-1"><b>For further reading</b>: <span style="font-style: italic;">World Authors 1975-1980</span>, ed. by
+Vineta Colby (1985)</font><font size="-1">; <span style="font-style: italic;">Patrick Modiano: pièces d'identité</span>
+by Colin Nettlebeck and Penelope Hueston (1986); 'Collaboration,
+Alienation, and the Crisis of Identity in the Film and Fiction of
+Patrick Modiano' by Richard J. Golsan, in <span style="font-style: italic;">Film and Literature: A Comparative
+Approach to Adaptation</span>, ed. by Wendell Aycock and Michael
+Schoenecke (1988); <span style="font-style: italic;">Patrick Modiano</span>,
+edited by Jules Bedner (1993); <span style="font-style: italic;">Patrick
+Modiano</span> by Alan Morris (1996); <span style="font-style: italic;">Paradigms
+of Memory. The Occupation and Other Hi/stories in the Novels of Patrick
+Modiano</span>, edited by Martine Guyot-Bender and William VanderWolk
+(1998)<span style="font-style: italic;">; A Self-Conscious Art: Patrick
+Modiano's Postmodern Fictions</span> by Akane Kawakami (2001);<span style="font-style: italic;"> A Riffaterrean Reading of Patrick
+Modiano's </span>La Place de L'étoile by Charles O'Keefe (2005); <span style="font-style: italic;">Patrick Modiano</span>, edited by John E.
+Flower (2007)&nbsp;</font><font size="2"> </font></blockquote>
+<p><b>Selected works</b>:<br>
+</p>
+<ul>
+<li>La place de l&#8217;étoile, 1968</li>
+<li>La ronde de nuit, 1969 <br>
+- Night Rounds (translated by Patricia Wolf, 1971) <br>
+</li>
+<li>Les boulevards de ceinture, 1972 <br>
+- Ring Roads (translated by Caroline Hillier, 1974) <br>
+- Kehäbulevardit (suom. Jorma Kapari, 1976) <br>
+</li>
+<li>Lacombe Lucien, 1974 (screenplay with Louis Malle) <br>
+- Lacombe Lucien: The Complete Scenario of the Film (translated by
+Sabine Destrée, 1975) <br>
+<font size="-1">- Film: Lacombe Lucien (1974), dir. by Louis
+Malle, starring Pierre Blaise, Aurore Clément, Holger Löwenadler </font><br>
+</li>
+<li>Villa Triste, 1975 <br>
+- Villa Triste (translated by Caroline Hillier, 1977) <br>
+- Villa Triste (suom. Jorma Kapari, 1977) <br>
+<font size="-1">- Film: Le parfum d'Yvonne (1994), dir. by
+Patrice Leconte, starring Jean-Pierre Marielle, Hippolyte Girardot,
+Sandra Extercatte</font><br>
+</li>
+<li>Emmanuel Berl: Interrogatoire, 1976</li>
+<li>Livret de famille, 1977&nbsp;</li>
+<li>Rue des boutiques obscures, 1978 <br>
+- Missing Person (translated by Daniel Weissbort, 1980) <br>
+- Hämärien puotien kuja (suom. Jorma Kapari, 1979) <br>
+</li>
+<li>Une jeunesse, 1981 <br>
+- Nuoruus (suom. Jorma Kapari, 1986) <br>
+<font size="-1">- Film: Une jeunesse (1983), dir. by Moshé
+Mizrahi, starring Ariane Lartéguy, Patrick Norbert, Jacques Dutronc</font><br>
+</li>
+<li>Memory Lane, 1981&nbsp;</li>
+<li>De si braves garçons, 1982 <br>
+<font size="-1">- Film: Charell (2006), dir. by Mikhaël Hers,
+starring Jean-Michel Fête, Marc Barbé, Anicée Alvina</font> <br>
+</li>
+<li>Poupée blonde de Pierre Michel Wals, 1983&nbsp;</li>
+<li>Quartier perdu, 1984 <br>
+- A Trace of Malice (translated by Anthea Bell, 1988) <br>
+- Kadonnut kortteli (suom. Jorma Kapari, 1987) <br>
+</li>
+<li>Une aventure de Choura, 1986&nbsp;</li>
+<li>Dimanches d&#8217;août, 1986 <br>
+<font size="-1">- Film: Te quiero (2001), dir. by Manuel
+Poirier, starring Philippe Bas, Marine Delterme, Patricia Farfan Villena</font></li>
+<li>Une fiancée pour Choura, 1987 (with Dominique Zehrfuss) <br>
+</li>
+<li>Remise de peine, 1988 <br>
+- Catherine Certitude (translated by William Rodarmor, 2000)<br>
+</li>
+<li>Catherine Certitude, 1988&nbsp;</li>
+<li>Vestiaire de l&#8217;enfance, 1989&nbsp;</li>
+<li>Voyage de noces, 1990 <br>
+- Honeymoon (translated by Barbara Wright, 1992)<br>
+</li>
+<li>Paris tendresse, 1990&nbsp;</li>
+<li>Fleurs de ruine, 1991&nbsp;</li>
+<li>Un cirque passe, 1992 <br>
+<font size="-1">- TV film: Des gens qui passent (2009), dir.
+by Alain Nahum, starring Laura Smet, Théo Frilet, Hippolyte Girardot</font></li>
+<li>Chien de printemps, 1993</li>
+<li>Du plus loin de l&#8217;oubli, 1995 <br>
+- Out of the Dark (translated by Jordan Stump, 1998) <br>
+</li>
+<li>Elle s&#8217;appelait Françoise, 1996 (with Catherine
+Deneuve)&nbsp;</li>
+<li>Dora Bruder, 1997 <br>
+- Dora Bruder (translated by Joanna Kilmartin, 1999) / The Search
+Warrant (translated by Joanna Kilmartin, 2000) <br>
+</li>
+<li>Aux jours anciens, 1998 <br>
+</li>
+<li>Des inconnues, 1999</li>
+<li>La Petite Bijou, 2001&nbsp;</li>
+<li>Éphéméride, 2001&nbsp;</li>
+<li>Accident nocturne, 2003</li>
+<li>Dieu prend-il soin des boeufs?, 2003&nbsp;</li>
+<li>Un pedigree, 2005</li>
+<li>28 Paradis, 2005 (with Dominique Zehrfuss)&nbsp;</li>
+<li>Dans le café de la jeunesse perdue, 2007</li>
+<li>L&#8217;horizon, 2010&nbsp;</li>
+<li>L&#8217;herbe des nuits, 2012&nbsp;</li>
+<li>28 Paradis, 28 Enfers, 2012 (with Dominique Zehrfuss and
+Marie Modiano)&nbsp;</li>
+<li>Romans, 2013&nbsp;</li>
+<li>Pour que tu ne te perdes pas dans le quartier, 2014&nbsp;</li>
+<li>Suspended Sentences: Three Novellas, 2014 (Afterimage,
+Suspended Sentences, Flowers of Ruin; translated by Mark Polizzotti)<br>
+<br>
+</li>
+</ul>
+<p align="center"><br>
+<!--Amazonbanner--> <a href="/web/20141130203442/http://www.amazon.com/exec/obidos/redirect-home/authorscalend-20"><img src="/web/20141130203442im_/http://www.kirjasto.sci.fi/pix/banneri.gif" alt="In Association with Amazon.com" border="0" height="60" hspace="0" vspace="0" width="468"></a><br>
+</p>
+<hr><i>
+<center><font size="-1"> Some rights reserved Petri Liukkonen
+(author) &amp; Ari Pesonen. Kuusankosken kaupunginkirjasto 2008</font></center>
+</i><br>
+<br>
+<!--Tekstipalsta p&#8222;&#8222;ttyy--> </td>
+</tr>
+</tbody>
+</table>
+</center>
+
+<i>
+<center><a rel="license" href="/web/20141130203442/http://creativecommons.org/licenses/by-nd-nc/1.0/fi/deed.en"><img alt="Creative Commons License" style="border-width: 0pt;" src="/web/20141130203442im_/http://i.creativecommons.org/l/by-nd-nc/1.0/fi/88x31.png"></a><br>
+<span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" property="dc:title" rel="dc:type">Authors' Calendar</span> jonka tekijä on <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Petri
+Liukkonen</span> on lisensoitu <a rel="license" href="/web/20141130203442/http://creativecommons.org/licenses/by-nd-nc/1.0/fi/deed.en">Creative
+Commons Nimeä-Epäkaupallinen-Ei muutettuja teoksia 1.0 Suomi (Finland)
+lisenssillä</a>.<br>
+May be used for non-commercial purposes. The author <b>must</b> be
+mentioned. The text may not be altered in any way (e.g. by
+translation). Click on the logo above for information.</center>
+</i><br>
+
+<br>
+
+</body></html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 20:34:42 Nov 30, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:58:41 Jun 19, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
