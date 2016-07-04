@@ -25,7 +25,7 @@ wget -q -O- "https://greencardamom.github.io/BooksAndWriters" > indeksi.htm
 2. Download author pages:
 
 ```
-grep '<li><a href="https://greencardamom.github.io' indexsi.htm | grep -oE "BooksAndWriters/[^.]*[^.]" | awk '{split($0,a,"/"); printf("wget --retry-connrefused --waitretry=1 --read-timeout=2 --timeout=5 --tries=1 --no-dns-cache -q -O- \"https://greencardamom.github.io/BooksAndWriters/%s.htm\" > %s.htm\n",a[2],a[2])}'
+grep '<li><a href="https://greencardamom.github.io' indeksi.htm | grep -oE "BooksAndWriters/[^.]*[^.]" | awk '{split($0,a,"/"); printf("wget --retry-connrefused --waitretry=1 --read-timeout=2 --timeout=5 --tries=1 --no-dns-cache -q -O- \"https://greencardamom.github.io/BooksAndWriters/%s.htm\" > %s.htm\n",a[2],a[2])}'
 ```
 
 ### AWB source code 
