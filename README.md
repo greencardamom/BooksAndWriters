@@ -1,10 +1,10 @@
-Project to archive the Books and Writers website (kirjasto.sci.fi) and associated Wikipedia tools.
+Project to archive the Books and Writers website (kirjasto.sci.fi - AKA Authors' Calendar) and associated Wikipedia tools.
 
 ### Overview 
 
 This repository contains two distinct elements:
 
-	1. An archive of the Books and Writers website (Books and Writers.zip)
+	1. An archive of the Books and Writers website in "Books and Writers.zip" and browsabe at https://greencardamom.github.io/BooksAndWriters
 	
 	2. Source code to update Wikipedia using AutoWikiBrowser (AWB)
 
@@ -12,21 +12,19 @@ The project website is [here](https://en.wikipedia.org/wiki/User:Green_Cardamom/
 
 ### Steps for archiving 
 
-The website is already archived (Books and Writers.zip). In case you want to do it again these are the steps I used:
+The website is already archived (Books and Writers.zip). In case you want to do it again these are the steps:
 
 1. Download index page:
 
 ```
-wget -q -O- "https://web.archive.org/web/20130704043115/http://www.kirjasto.sci.fi/indeksi.htm" > indeksi.htm
+wget -q -O- "https://greencardamom.github.io/BooksAndWriters" > indeksi.htm
 ```
 
 2. Download author pages:
 
 ```
-grep '<li><a href="/web/20130704043115/http://www.kirjasto.sci.fi' indexsi.htm | grep -oE "sci.fi/[^.]*[^.]" | awk '{split($0,a,"/"); printf("wget --retry-connrefused --waitretry=1 --read-timeout=2 --timeout=5 --tries=1 --no-dns-cache -q -O- -q -O- \"https://web.archive.org/web/20150210175324/http://www.kirjasto.sci.fi/%s.htm\" > %s.htm\n",a[2],a[2])}'
+grep '<li><a href="https://greencardamom.github.io' indexsi.htm | grep -oE "BooksAndWriters/[^.]*[^.]" | awk '{split($0,a,"/"); printf("wget --retry-connrefused --waitretry=1 --read-timeout=2 --timeout=5 --tries=1 --no-dns-cache -q -O- \"https://greencardamom.github.io/BooksAndWriters/%s.htm\" > %s.htm\n",a[2],a[2])}'
 ```
-
-Note: wget hangs in about 10% of cases due to the last character ">" missing from the HTML source page (Wayback error) thus the need for all the timeout settings.
 
 ### AWB source code 
 
