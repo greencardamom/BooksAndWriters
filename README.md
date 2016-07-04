@@ -4,11 +4,13 @@ Project to archive the Books and Writers website (kirjasto.sci.fi - AKA Authors'
 
 This repository contains two distinct elements:
 
-	1. An archive of the Books and Writers website in "Books and Writers.zip" and browsabe at https://greencardamom.github.io/BooksAndWriters
+	1. An archive of the Books and Writers website (Books_and_Writers.zip)
 	
 	2. Source code to update Wikipedia using AutoWikiBrowser (AWB)
 
 The project website is [here](https://en.wikipedia.org/wiki/User:Green_Cardamom/kirjasto.sci.fi).
+
+The site is browsable [here](https://greencardamom.github.io/BooksAndWriters).
 
 ### Steps for archiving 
 
