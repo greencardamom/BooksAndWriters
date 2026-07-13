@@ -7,7 +7,7 @@ BEGIN {
 
    while ((getline s < sourcefile ) > 0) {
 
-     if(s ~ "*[ ]{0,2}[[]{0,1}[ ]{0,2}http[s]{0,1}[:]//[w]{0,1}[w]{0,1}[w]{0,1}[.]{0,1}kirjasto[.]sci[.]fi") {
+     if(s ~ "[*][ ]{0,2}[[]{0,1}[ ]{0,2}http[s]{0,1}[:]//[w]{0,1}[w]{0,1}[w]{0,1}[.]{0,1}kirjasto[.]sci[.]fi") {
        match(s,"sci.fi/[^.]+[^.]",a)
        split(a[0],b,"/")
        bwid = b[2]
